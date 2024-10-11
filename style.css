@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: 'smooth';
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    scroll-behavior: smooth;
+    /*background-color: rgb(240, 240, 240);*/
+    background: rgb(10, 10, 10);
+}
+
+p {
+    color: white;
+}
+
+/* Navigation Section (Top BAR) */
+
+#Navigation {
+    background-color: rgb(54, 54, 54);
+    width: 100%;
+    position: fixed;
+    border-bottom: black solid 2px;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+    max-height: 55px;
+
+}
+
+#Navigation li {
+    cursor: pointer;
+    color: white;
+    border-bottom: black solid 1px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 0px 20px;
+    display: inline-block;
+    opacity: .5;
+    user-select: none;
+    transition: 0.25s;
+
+}
+
+#Navigation li:hover {
+    opacity: 1;
+    font-size: 22px;
+    margin: 0px 19px
+}
+
+
+
+
+
+#Navigation li:active {
+    transition: 0.1s;
+    opacity: .5;
+
+}
+
+/* For buttons created */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Top Home Page (Introduction) */
+
+#intro {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+    position: static;
+    font-size: 3vw;
+}
+
+
+
+#headshot {
+    animation: zoomIn 1.38s cubic-bezier(1, 0.01, 0, 0.99);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    /* Scale from the top, instead of the center */
+    will-change: transform;
+    margin: 75px;
+    border-radius: 200px;
+    border: solid 2px white;
+    width: 20%;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* General Format  (Sections) */
+
+.Sections {
+    border-top: solid rgb(54, 54, 54) 5px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 260px;
+}
+
+.Sections h2 {
+    font-size: 30px;
+    margin-bottom: 10%;
+}
+
+/* About Me Section  */
+.languages {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    right: 8%;
+    gap: 4em;
+    max-height: 30px;
+    max-width: 30%;
+
+}
+
+.languages img {
+    width: 5vw;
+
+}
+
+.YAP p {
+    display: relative;
+    width: 50%;
+    font-size: 17px;
+    margin-left: 55px;
+}
+
+#section {
+    color: white;
+}
+
+#list li {
+    color: white;
+    margin: 110px 0px
+}
+
+
+#list2 li {
+    color: white;
+    margin: 80px;
+}
+
+#countUP {
+    background: white;
+    border: solid black 2px;
+    border-radius: 5px;
+    transition: 0.1s;
+}
+
+#countUP:active {
+    background-color: rgb(212, 212, 212);
+    font-size: 14px;
+}
+
+#Counter {
+
+    color: rgb(255, 160, 83);
+}
+
+#counterValue {
+    color: rgb(255, 133, 133);
+}
+
+#scrollTop {
+
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: rgb(148, 88, 216);
+    color: wheat;
+}
+
+#Bits {
+    color: white;
+    margin: 50px 0 0 10px;
+    border-bottom: solid black 2px;
+    width: 145px;
+    padding: 0px;
+}
+
+.Links {
+    color: rgb(169, 8, 255);
+}
+
+.Links:hover {
+    color: rgb(207, 119, 255);
+}
+
+.Links::after {
+    color: rgb(242, 0, 255)
+}
+
+#webScraper {
+    color: rgb(17, 200, 0);
+    right: 50%;
+    position: relative;
+}
+
+.projectNames .contactLogos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+
+    margin: 50px auto;
+
+}
+
+.contactLogos img {
+    width: 4em;
+    border: solid white 2px;
+    border-radius: 40px;
+    padding: 6px;
+    transition: 0.5s
+}
+
+.contactLogos img:hover {
+    background-color: white;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: rgb(37, 37, 37);
+    border-top: solid black 2px;
+}
+
+footer p {
+    position: relative;
+    text-align: center;
+    color: rgb(163, 163, 163);
+    padding: 20px;
+}
